@@ -59,7 +59,10 @@ article {
     margin-top: 1%;
     padding: 2%;
 }
-
+article h2 {
+    position: absolute;
+    left: -9999px;
+}
 aside {
     background-color: rgba(24, 52, 64, 0.3);
     padding: 2%;
