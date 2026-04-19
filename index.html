@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project4Kentucky – School Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Project4Kentucky</h1>
+    <p class="subtitle">A School Project Exploring the Bluegrass State</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#facts">Quick Facts</a>
+    <a href="#history">History</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+      <h2>Welcome to Kentucky</h2>
+      <p>
+        Discover the beauty, history, and culture of the Bluegrass State —
+        from the rolling hills of horse country to the Appalachian Mountains
+        in the east.
+      </p>
+      <a href="#about" id="learn-more-btn" class="btn">Learn More</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Kentucky</h2>
+      <p>
+        Kentucky is a state located in the east-central region of the United States.
+        It became the 15th state admitted to the Union on June 1, 1792.
+        Bordered by seven states — Illinois, Indiana, Ohio, West Virginia, Virginia,
+        Tennessee, and Missouri — Kentucky is known for its stunning landscapes,
+        thoroughbred horse farms, bourbon distilleries, and coal mining heritage.
+      </p>
+      <p style="margin-top:0.75rem;">
+        The state capital is <strong>Frankfort</strong>, while its largest city is
+        <strong>Louisville</strong>, home to the world-famous Kentucky Derby.
+        The state nickname, <em>the Bluegrass State</em>, comes from the bluegrass
+        that grows throughout the region, giving the pastures a distinctive blue-green hue.
+      </p>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section id="facts">
+      <h2>Quick Facts</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <h3>Statehood</h3>
+          <p>June 1, 1792 (15th state)</p>
+        </div>
+        <div class="fact-card">
+          <h3>Capital</h3>
+          <p>Frankfort</p>
+        </div>
+        <div class="fact-card">
+          <h3>Largest City</h3>
+          <p>Louisville</p>
+        </div>
+        <div class="fact-card">
+          <h3>Nickname</h3>
+          <p>The Bluegrass State</p>
+        </div>
+        <div class="fact-card">
+          <h3>State Bird</h3>
+          <p>Northern Cardinal</p>
+        </div>
+        <div class="fact-card">
+          <h3>State Flower</h3>
+          <p>Goldenrod</p>
+        </div>
+        <div class="fact-card">
+          <h3>State Tree</h3>
+          <p>Tulip Poplar</p>
+        </div>
+        <div class="fact-card">
+          <h3>State Song</h3>
+          <p>My Old Kentucky Home</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history">
+      <h2>History Highlights</h2>
+
+      <details open>
+        <summary>Early Exploration (1750s–1770s)</summary>
+        <p>
+          European-American explorers began entering the region in the 1750s.
+          Daniel Boone's expeditions in the late 1760s and his role in blazing
+          the Wilderness Road through the Cumberland Gap opened Kentucky to
+          large-scale settlement from the eastern colonies.
+        </p>
+      </details>
+
+      <details>
+        <summary>Statehood &amp; Growth (1792–1860)</summary>
+        <p>
+          Kentucky became the first U.S. state west of the Appalachian Mountains
+          in 1792. The fertile land attracted thousands of settlers, and
+          agriculture — especially hemp, tobacco, and horse breeding — drove
+          rapid economic growth throughout the 19th century.
+        </p>
+      </details>
+
+      <details>
+        <summary>Civil War Era (1861–1865)</summary>
+        <p>
+          Kentucky declared neutrality at the start of the Civil War, but was
+          claimed by both the Union and the Confederacy. Several major battles
+          were fought on Kentucky soil, including the Battle of Perryville in
+          1862, and the state ultimately remained in the Union.
+        </p>
+      </details>
+
+      <details>
+        <summary>Modern Kentucky (20th Century–Present)</summary>
+        <p>
+          The 20th century brought industrialization, coal mining booms, and
+          expansion of the bourbon and horse industries. Today Kentucky is
+          known for its vibrant tourism, University of Kentucky and University
+          of Louisville athletics, and its growing technology and manufacturing
+          sectors.
+        </p>
+      </details>
+    </section>
+
+    <!-- Quiz Section -->
+    <section>
+      <h2>Test Your Knowledge</h2>
+      <div id="quiz">
+        <p class="question" id="quiz-question">Loading question…</p>
+        <div class="quiz-options" id="quiz-options"></div>
+        <button class="btn" id="quiz-submit">Submit Answer</button>
+        <p id="quiz-result" style="margin-top:0.75rem;"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Project4Kentucky &mdash; School Project &mdash; Created with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

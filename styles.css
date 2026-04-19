@@ -1,0 +1,236 @@
+/* Project4Kentucky - School Project Stylesheet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f5f0e8;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* ── Header ── */
+header {
+  background-color: #003087; /* Kentucky blue */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+header p.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* ── Navigation ── */
+nav {
+  background-color: #002060;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  color: #c8d8f8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0044b8;
+  color: #ffffff;
+}
+
+/* ── Main Content ── */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+/* Hero banner */
+.hero {
+  background: linear-gradient(135deg, #003087 60%, #b8960c);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.92;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b8960c; /* Kentucky gold */
+  color: #ffffff;
+  padding: 0.65rem 1.6rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #9a7b0a;
+}
+
+/* Section headings */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.7rem;
+  color: #003087;
+  border-bottom: 3px solid #b8960c;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Facts grid */
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.fact-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #003087;
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.fact-card h3 {
+  font-size: 1rem;
+  color: #b8960c;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fact-card p {
+  font-size: 1rem;
+}
+
+/* Accordion / details */
+details {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+details summary {
+  font-weight: bold;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: #003087;
+  list-style: none;
+}
+
+details summary::before {
+  content: '▶ ';
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+}
+
+details[open] summary::before {
+  content: '▼ ';
+}
+
+details p {
+  margin-top: 0.65rem;
+}
+
+/* Quiz section */
+#quiz {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+#quiz p.question {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #003087;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-options label {
+  background: #f0f4ff;
+  border: 1px solid #c0cbee;
+  border-radius: 4px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.quiz-options label:hover {
+  background: #dce6ff;
+}
+
+.quiz-options input[type="radio"] {
+  margin-right: 0.6rem;
+}
+
+#quiz-result {
+  font-weight: bold;
+  font-size: 1rem;
+  min-height: 1.5rem;
+}
+
+.correct { color: #1a7a1a; }
+.incorrect { color: #b22222; }
+
+/* ── Footer ── */
+footer {
+  background-color: #002060;
+  color: #c8d8f8;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
